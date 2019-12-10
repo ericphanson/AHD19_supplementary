@@ -2,7 +2,8 @@
 
 This code establishes that the function `f(x) = x - x^2 * M(x)` has a unique
 maxima `x0` on the positive real line, and to establish bounds on `x0` and
-`f(x0)`, using interval arithmetic.
+`f(x0)`, using interval arithmetic. Here, `M(x)` is the Mills ratio of a
+standard normal distribution.
 
 The code is written in the [Julia](https://julialang.org/) programming language,
 and was run with Julia version 1.3. To replicate it, install Julia 1.3 and in
