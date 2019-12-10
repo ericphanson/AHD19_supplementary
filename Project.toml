@@ -1,0 +1,4 @@
+[deps]
+IntervalArithmetic = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
+IntervalRootFinding = "d2bf35a9-74e0-55ec-b149-d360ff49b807"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
