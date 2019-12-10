@@ -73,10 +73,10 @@ uuid = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
 version = "0.16.1"
 
 [[IntervalRootFinding]]
-deps = ["ForwardDiff", "IntervalArithmetic", "LinearAlgebra", "Polynomials", "StaticArrays", "Test"]
-git-tree-sha1 = "ae84fdca524b195d144d8cb7eaee692206938f02"
+deps = ["ForwardDiff", "IntervalArithmetic", "LinearAlgebra", "Polynomials", "StaticArrays"]
+git-tree-sha1 = "490f6634d2821dfb65f933da84c18e4d8744b9e0"
 uuid = "d2bf35a9-74e0-55ec-b149-d360ff49b807"
-version = "0.4.0"
+version = "0.5.1"
 
 [[LibGit2]]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
@@ -115,9 +115,9 @@ uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 
 [[Polynomials]]
 deps = ["LinearAlgebra", "RecipesBase"]
-git-tree-sha1 = "ae71c2329790af97b7682b11241b3609e4d48626"
+git-tree-sha1 = "f7c0c07e82798aef542d60a6e6e85e39f4590750"
 uuid = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
-version = "0.6.0"
+version = "0.5.3"
 
 [[Printf]]
 deps = ["Unicode"]
@@ -167,9 +167,9 @@ version = "0.9.0"
 
 [[StaticArrays]]
 deps = ["LinearAlgebra", "Random", "Statistics"]
-git-tree-sha1 = "5a3bcb6233adabde68ebc97be66e95dcb787424c"
+git-tree-sha1 = "1085ffbf5fd48fdba64ef8e902ca429c4e1212d3"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "0.12.1"
+version = "0.11.1"
 
 [[Statistics]]
 deps = ["LinearAlgebra", "SparseArrays"]
