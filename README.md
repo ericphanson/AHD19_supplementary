@@ -34,3 +34,36 @@ This package uses
 [IntervalRootFinding.jl](https://github.com/JuliaIntervals/IntervalRootFinding.jl),
 [IntervalArithmetic.jl](https://github.com/JuliaIntervals/IntervalArithmetic.jl),
 and [SpecialFunctions.jl](https://github.com/JuliaMath/SpecialFunctions.jl).
+
+Note: replacing the line
+
+```julia
+rs = roots(f_p, f_pp, 0.0..3.0, Newton, 1e-15)
+```
+
+in `main.jl` with
+
+```julia
+setprecision(BigFloat, 2000)
+rs = roots(f_p, f_pp, big(0.0)..big(3.0), Newton, 1e-200)
+```
+
+gives the results to over 200 digits of precision (in under 20 seconds on a
+laptop). With so many digits, it may be also more clear to change the formatting
+by calling `setformat(:midpoint, sigfigs = 200)` instead of `setformat(:full)`.
+The code can also be run interactively by starting a Julia session (with `julia --project=.`),
+and then calling `include("main.jl")` to run the code. One can
+check that e.g. the maximizer `x0` of `f` lies in an interval with midpoint
+
+```julia
+x0_midpoint = 1.1615278892744773670045950310963179055248173430096323424769955414382269171608731946077556127298357168401180625744295360417841176365395298299362693004595909274105907300177015449413811557016397489604206
+```
+
+and radius `10^(-200)`, and likewise the maximum value `μ = f(x0)` lies in an
+interval with midpoint
+
+```julia
+μ_midpoint = 0.34681304709746665181959754576447769285509612047268959015695819176107030519709316551907071207639500027888189518938144470631572427308431734016794687095581930366434405144098077187902614048928981046477308
+```
+
+and radius `10^(-200)`.
