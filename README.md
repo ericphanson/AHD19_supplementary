@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/227002903.svg)](https://zenodo.org/badge/latestdoi/227002903)
+
 # AHD19 supplementary material
 
 This code establishes that the function `f(x) = x - x^2 * M(x)` has a unique
