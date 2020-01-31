@@ -1,6 +1,9 @@
 [![DOI](https://zenodo.org/badge/227002903.svg)](https://zenodo.org/badge/latestdoi/227002903)
+[![arXiv article](https://img.shields.io/badge/article-arXiv%3A1912.05599-B31B1B)](https://arxiv.org/abs/1912.05599)
 
 # AHD19 supplementary material
+
+This repository contains supplementary code for [*A continuity bound for the expected number of connected components of a random graph: a model for epidemics*](https://arxiv.org/abs/1912.05599).
 
 This code establishes that the function `f(x) = x - x^2 * M(x)` has a unique
 maxima `x0` on the positive real line, and to establish bounds on `x0` and
